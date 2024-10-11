@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.5;
+            background: linear-gradient(to right, #00c6ff 0%, white 20%, white 80%, #0072ff 100%); /* Degradado en los lados */
         }
         header {
             text-align: center;
@@ -18,10 +19,14 @@
         h1, h2, h3 {
             margin: 0;
         }
-        section {
+        /* Estilo para la hoja centrada */
+        .hoja {
             padding: 20px;
-            margin: 0 auto;
+            margin: 20px auto;
             max-width: 900px;
+            background-color: white;
+            border: 5px solid #0072ff; /* Borde remarcado */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para el efecto de hoja */
         }
         h3 {
             margin-bottom: 10px;
@@ -52,19 +57,19 @@
 </head>
 <body>
 
-    <header>
+    <header class="hoja">
         <h1>JOSE JULIAN REYES CHAVEZ</h1>
         <img src="20840151.jpg" width="150" height="150" alt="Foto de José Julián">
         <h2>Ing. Sistemas Computacionales</h2>
         <h3>Especialidad: GESTION Y DESARROLLO DE TECNOLOGIAS INTEGRALES</h3>
     </header>
 
-    <section> 
+    <section class="hoja">
         <h3>Objetivo Profesional</h3>
         <p>Desarrollar una sólida carrera como Ingeniero en Sistemas Computacionales, aplicando mis conocimientos en diseño, desarrollo e implementación de soluciones tecnológicas innovadoras. Aspiro a convertirme en un profesional altamente capacitado, capaz de resolver problemas complejos y optimizar procesos a través de la tecnología, contribuyendo al crecimiento y desarrollo de organizaciones y de la sociedad en general.</p>
     </section>
 
-    <section>
+    <section class="hoja">
         <h3>Experiencia Académica</h3>
         <table>
             <tr>
@@ -86,7 +91,7 @@
         </table>
     </section>
 
-    <section>
+    <section class="hoja">
         <h3>Formación Académica</h3>
         <table border="1" width="50%" align="center">
             <tr>
@@ -107,7 +112,7 @@
         </table>
     </section>
 
-    <section>
+    <section class="hoja">
         <h3>Habilidades</h3>
         <ul>
             <li>CSS - Básico</li>
@@ -118,7 +123,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="hoja">
         <h3>Enlaces</h3>
         <ul>
             <li><a href="https://www.facebook.com/profile.php?id=61558428256134">Perfil en Facebook</a></li>
@@ -126,10 +131,9 @@
         </ul>
     </section>
 
-  <footer>
-    <p style="text-align: center;">Contacto: <a href="mailto:joseelitejava007@gmail.com">joseelitejava007@gmail.com</a></p>
-</footer>
-
+    <footer class="hoja">
+        <p style="text-align: center;">Contacto: <a href="mailto:joseelitejava007@gmail.com">joseelitejava007@gmail.com</a></p>
+    </footer>
 
 </body>
 </html>
